@@ -1,0 +1,1605 @@
+# do sim_build/runsim.do
+# QuestaSim-64 vmap 2021.1 Lib Mapping Utility 2021.01 Jan 19 2021
+# vmap -c 
+# ** Warning: vmap will not overwrite local modelsim.ini.
+# QuestaSim-64 vmap 2021.1 Lib Mapping Utility 2021.01 Jan 19 2021
+# vmap work sim_build/work 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:18:57 on Jan 30,2024
+# vlog -work work "+define+COCOTB_SIM" -sv -timescale 1ns/1ps -mfcu "+acc" E:/Digital_Verf/Linkdin/12.PyUVM_CLK_Generator/clk_gen.sv 
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# End time: 17:18:58 on Jan 30,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -onfinish exit -pli "C:/ProgramData/Anaconda3/lib/site-packages/cocotb/libs/cocotbvpi_modelsim.dll" sim_build/work.clk_gen 
+# Start time: 17:18:58 on Jan 30,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vsim-3865) Due to PLI being present, global +acc is being enabled automatically. This will cause your simulation to run very slowly. Please use vsim -no_autoacc to disable this feature. This feature is now deprecated and will be removed from future releases.
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.clk_gen(fast)
+# Loading C:/ProgramData/Anaconda3/lib/site-packages/cocotb/libs/cocotbvpi_modelsim.dll
+#      -.--ns INFO     gpi                                ..mbed\gpi_embed.cpp:78   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+#      -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+#      0.00ns INFO     cocotb                             Running on ModelSim for Questa-64 version 2021.1 2021.01
+# 
+#      0.00ns INFO     cocotb                             Running tests with cocotb v1.7.1 from C:\ProgramData\Anaconda3\lib\site-packages\cocotb
+# 
+#      0.00ns INFO     cocotb                             Seeding Python random module with 1706627939
+# 
+#      0.00ns INFO     cocotb.regression                  Found test tb.test
+# 
+#      0.00ns INFO     cocotb.regression                  running test (1/1)
+# 
+#      0.00ns INFO     uvm.uvm_test_top113321488          tb.py(11)[uvm_test_top]:  [TEST] WE ARE STARTING build_phase TEST
+# 
+#      0.00ns INFO     ..op.environment_instance199999344 environment.py(11)[uvm_test_top.environment_instance]:  [ENVIRONMENT] WE ARE STARTING  build_phase ENVIRONMENT
+# 
+#      0.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(12)[uvm_test_top.environment_instance.scoreboard_instance]:  [SCOREBOARD] WE ARE STARTING  build_phase SCOREBOARD
+# 
+#      0.00ns INFO     ..nce.subscriber_instance200411888 subscriber.py(18)[uvm_test_top.environment_instance.subscriber_instance]:  [SUBSCRIBER] WE ARE STARTING  build_phase SUBSCRIBER
+# 
+#      0.00ns INFO     ..instance.agent_instance200413136 agent.py(12)[uvm_test_top.environment_instance.agent_instance]:  [AGENT] WE ARE STARTING  build_phase AGENT
+# 
+#      0.00ns INFO     ..ance.sequencer_instance200532416 sequencer.py(9)[uvm_test_top.environment_instance.agent_instance.sequencer_instance]:  [SEQUENCER] WE ARE STARTING  build_phase SEQUENCER
+# 
+#      0.00ns INFO     ..nstance.driver_instance200534384 driver.py(14)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  build_phase DRIVER
+# 
+#      0.00ns INFO     ..stance.monitor_instance200535632 monitor.py(11)[uvm_test_top.environment_instance.agent_instance.monitor_instance]:  [MONITOR] WE ARE STARTING  build_phase MONITOR
+# 
+#      0.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(18)[uvm_test_top.environment_instance.scoreboard_instance]:  [SCOREBOARD] WE ARE STARTING  connect_phase SCOREBOARD
+# 
+#      0.00ns INFO     ..nce.subscriber_instance200411888 subscriber.py(23)[uvm_test_top.environment_instance.subscriber_instance]:  [SUBSCRIBER] WE ARE STARTING  connect_phase SUBSCRIBER
+# 
+#      0.00ns INFO     ..ance.sequencer_instance200532416 sequencer.py(13)[uvm_test_top.environment_instance.agent_instance.sequencer_instance]:  [SEQUENCER] WE ARE STARTING  connect_phase SEQUENCER
+# 
+#      0.00ns INFO     ..nstance.driver_instance200534384 driver.py(20)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  connect_phase DRIVER
+# 
+#      0.00ns INFO     ..stance.monitor_instance200535632 monitor.py(18)[uvm_test_top.environment_instance.agent_instance.monitor_instance]:  [MONITOR] WE ARE STARTING  connect_phase MONITOR
+# 
+#      0.00ns INFO     ..instance.agent_instance200413136 agent.py(21)[uvm_test_top.environment_instance.agent_instance]:  [AGENT] WE ARE STARTING  connect_phase AGENT
+# 
+#      0.00ns INFO     ..op.environment_instance199999344 environment.py(21)[uvm_test_top.environment_instance]:  [ENVIRONMENT] WE ARE STARTING  connect_phase ENVIRONMENT
+# 
+#      0.00ns INFO     uvm.uvm_test_top113321488          tb.py(21)[uvm_test_top]:  [TEST] WE ARE STARTING  connect_phase TEST
+# 
+#      0.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(21)[uvm_test_top.environment_instance.scoreboard_instance]:  [SCOREBOARD] WE ARE STARTING  run_phase SCOREBOARD
+# 
+#      0.00ns INFO     ..nce.subscriber_instance200411888 subscriber.py(26)[uvm_test_top.environment_instance.subscriber_instance]:  [SUBSCRIBER] WE ARE STARTING  run_phase SUBSCRIBER
+# 
+#      0.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+#      0.00ns INFO     ..stance.monitor_instance200535632 monitor.py(21)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] STARTING.
+# 
+#      0.00ns INFO     ..instance.agent_instance200413136 agent.py(25)[uvm_test_top.environment_instance.agent_instance]:  [AGENT] WE ARE STARTING  run_phase AGENT
+# 
+#      0.00ns INFO     ..op.environment_instance199999344 environment.py(33)[uvm_test_top.environment_instance]:  [ENVIRONMENT] WE ARE STARTING  run_phase ENVIRONMENT
+# 
+#      0.00ns INFO     uvm.uvm_test_top113321488          tb.py(27)[uvm_test_top]:  [TEST] WE ARE STARTING run_phase TEST
+# 
+#      0.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+#      0.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+#      0.00ns INFO     cocotb                             the Value of rst        is   1
+# 
+#      0.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+#      0.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+#      0.00ns INFO     cocotb                             the Value of period     is   0
+# 
+#      0.00ns INFO     cocotb                             **************************************************
+# 
+#      0.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+#     10.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+#     10.00ns INFO     cocotb                             the Value of rst        is   1
+# 
+#     10.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+#     10.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+#     10.00ns INFO     cocotb                             the Value of period     is   0
+# 
+#     10.00ns INFO     cocotb                             **************************************************
+# 
+#     20.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+#     20.00ns INFO     cocotb                             the Value of rst        is   1
+# 
+#     20.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+#     20.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+#     20.00ns INFO     cocotb                             the Value of period     is   0
+# 
+#     20.00ns INFO     cocotb                             **************************************************
+# 
+#     20.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+#     20.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+#     20.00ns INFO     cocotb                             the Value of rst        is   1
+# 
+#     20.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+#     20.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+#     20.00ns INFO     cocotb                             the Value of period     is   0
+# 
+#     20.00ns INFO     cocotb                             **************************************************
+# 
+#     20.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+#     20.00ns INFO     cocotb                             the Value of rst        is   1
+# 
+#     20.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+#     20.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+#     20.00ns INFO     cocotb                             the Value of period     is   0
+# 
+#     20.00ns INFO     cocotb                             **************************************************
+# 
+#     20.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+#     20.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+#     20.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+#     20.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+#     20.00ns INFO     cocotb                             the Value of baud       is   19200
+# 
+#     20.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+#     20.00ns INFO     cocotb                             the Value of period     is   0
+# 
+#     20.00ns INFO     cocotb                             **************************************************
+# 
+#     30.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+#     30.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+#     30.00ns INFO     cocotb                             the Value of baud       is   19200
+# 
+#     30.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+#     30.00ns INFO     cocotb                             the Value of period     is   0
+# 
+#     30.00ns INFO     cocotb                             **************************************************
+# 
+# 104280.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 104280.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 104280.00ns INFO     cocotb                             the Value of baud       is   19200
+# 
+# 104280.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 104280.00ns INFO     cocotb                             the Value of period     is   52120.0
+# 
+# 104280.00ns INFO     cocotb                             **************************************************
+# 
+# 104280.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 104280.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 104280.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 104280.00ns INFO     cocotb                             the Value of baud       is   19200
+# 
+# 104280.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 104280.00ns INFO     cocotb                             the Value of period     is   52120.0
+# 
+# 104280.00ns INFO     cocotb                             **************************************************
+# 
+# 104280.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(52)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 104280.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 104280.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 104280.00ns INFO     cocotb                             the Value of baud       is   19200
+# 
+# 104280.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 104280.00ns INFO     cocotb                             the Value of period     is   52120.0
+# 
+# 104280.00ns INFO     cocotb                             **************************************************
+# 
+# 104280.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 104280.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 104280.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 104280.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 104280.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 104280.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 104280.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 104280.00ns INFO     cocotb                             **************************************************
+# 
+# 104290.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 104290.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 104290.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 104290.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 104290.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 104290.00ns INFO     cocotb                             **************************************************
+# 
+# 243240.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 243240.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 243240.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 243240.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 243240.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 243240.00ns INFO     cocotb                             **************************************************
+# 
+# 243240.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 243240.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 243240.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 243240.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 243240.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 243240.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 243240.00ns INFO     cocotb                             **************************************************
+# 
+# 243240.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(44)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 243240.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 243240.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 243240.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 243240.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 243240.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 243240.00ns INFO     cocotb                             **************************************************
+# 
+# 243240.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 243240.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 243240.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 243240.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 243240.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 243240.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 243240.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 243240.00ns INFO     cocotb                             **************************************************
+# 
+# 243250.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 243250.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 243250.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 243250.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 243250.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 243250.00ns INFO     cocotb                             **************************************************
+# 
+# 278040.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 278040.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 278040.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 278040.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 278040.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 278040.00ns INFO     cocotb                             **************************************************
+# 
+# 278040.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 278040.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 278040.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 278040.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 278040.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 278040.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 278040.00ns INFO     cocotb                             **************************************************
+# 
+# 278040.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(68)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 278040.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 278040.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 278040.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 278040.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 278040.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 278040.00ns INFO     cocotb                             **************************************************
+# 
+# 278040.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 278040.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 278040.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 278040.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 278040.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 278040.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 278040.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 278040.00ns INFO     cocotb                             **************************************************
+# 
+# 278050.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 278050.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 278050.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 278050.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 278050.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 278050.00ns INFO     cocotb                             **************************************************
+# 
+# 486440.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 486440.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 486440.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 486440.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 486440.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 486440.00ns INFO     cocotb                             **************************************************
+# 
+# 486440.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 486440.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 486440.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 486440.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 486440.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 486440.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 486440.00ns INFO     cocotb                             **************************************************
+# 
+# 486440.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(36)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 486440.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 486440.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 486440.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 486440.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 486440.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 486440.00ns INFO     cocotb                             **************************************************
+# 
+# 486440.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 486440.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 486440.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 486440.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 486440.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 486440.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 486440.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 486440.00ns INFO     cocotb                             **************************************************
+# 
+# 486450.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 486450.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 486450.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 486450.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 486450.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 486450.00ns INFO     cocotb                             **************************************************
+# 
+# 694840.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 694840.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 694840.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 694840.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 694840.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 694840.00ns INFO     cocotb                             **************************************************
+# 
+# 694840.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 694840.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 694840.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 694840.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 694840.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 694840.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 694840.00ns INFO     cocotb                             **************************************************
+# 
+# 694840.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(36)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 694840.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 694840.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 694840.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 694840.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 694840.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 694840.00ns INFO     cocotb                             **************************************************
+# 
+# 694840.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 694840.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 694840.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 694840.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 694840.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 694840.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 694840.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 694840.00ns INFO     cocotb                             **************************************************
+# 
+# 694850.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 694850.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 694850.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 694850.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 694850.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 694850.00ns INFO     cocotb                             **************************************************
+# 
+# 1111560.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 1111560.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1111560.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 1111560.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1111560.00ns INFO     cocotb                             the Value of period     is   208360.0
+# 
+# 1111560.00ns INFO     cocotb                             **************************************************
+# 
+# 1111560.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 1111560.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 1111560.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1111560.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 1111560.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1111560.00ns INFO     cocotb                             the Value of period     is   208360.0
+# 
+# 1111560.00ns INFO     cocotb                             **************************************************
+# 
+# 1111560.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(28)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 1111560.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 1111560.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1111560.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 1111560.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1111560.00ns INFO     cocotb                             the Value of period     is   208360.0
+# 
+# 1111560.00ns INFO     cocotb                             **************************************************
+# 
+# 1111560.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 1111560.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 1111560.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 1111560.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1111560.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 1111560.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1111560.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 1111560.00ns INFO     cocotb                             **************************************************
+# 
+# 1111570.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 1111570.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1111570.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 1111570.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1111570.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 1111570.00ns INFO     cocotb                             **************************************************
+# 
+# 1163720.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 1163720.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1163720.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 1163720.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1163720.00ns INFO     cocotb                             the Value of period     is   26080.0
+# 
+# 1163720.00ns INFO     cocotb                             **************************************************
+# 
+# 1163720.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 1163720.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 1163720.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1163720.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 1163720.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1163720.00ns INFO     cocotb                             the Value of period     is   26080.0
+# 
+# 1163720.00ns INFO     cocotb                             **************************************************
+# 
+# 1163720.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(60)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 1163720.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 1163720.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1163720.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 1163720.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1163720.00ns INFO     cocotb                             the Value of period     is   26080.0
+# 
+# 1163720.00ns INFO     cocotb                             **************************************************
+# 
+# 1163720.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 1163720.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 1163720.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 1163720.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1163720.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 1163720.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1163720.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 1163720.00ns INFO     cocotb                             **************************************************
+# 
+# 1163730.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 1163730.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1163730.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 1163730.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1163730.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 1163730.00ns INFO     cocotb                             **************************************************
+# 
+# 1372120.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 1372120.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1372120.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 1372120.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1372120.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 1372120.00ns INFO     cocotb                             **************************************************
+# 
+# 1372120.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 1372120.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 1372120.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1372120.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 1372120.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1372120.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 1372120.00ns INFO     cocotb                             **************************************************
+# 
+# 1372120.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(36)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 1372120.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 1372120.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1372120.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 1372120.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1372120.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 1372120.00ns INFO     cocotb                             **************************************************
+# 
+# 1372120.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 1372120.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 1372120.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 1372120.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1372120.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 1372120.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1372120.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 1372120.00ns INFO     cocotb                             **************************************************
+# 
+# 1372130.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 1372130.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1372130.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 1372130.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1372130.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 1372130.00ns INFO     cocotb                             **************************************************
+# 
+# 1788840.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 1788840.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1788840.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 1788840.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1788840.00ns INFO     cocotb                             the Value of period     is   208360.0
+# 
+# 1788840.00ns INFO     cocotb                             **************************************************
+# 
+# 1788840.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 1788840.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 1788840.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1788840.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 1788840.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1788840.00ns INFO     cocotb                             the Value of period     is   208360.0
+# 
+# 1788840.00ns INFO     cocotb                             **************************************************
+# 
+# 1788840.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(28)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 1788840.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 1788840.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1788840.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 1788840.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1788840.00ns INFO     cocotb                             the Value of period     is   208360.0
+# 
+# 1788840.00ns INFO     cocotb                             **************************************************
+# 
+# 1788840.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 1788840.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 1788840.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 1788840.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1788840.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 1788840.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1788840.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 1788840.00ns INFO     cocotb                             **************************************************
+# 
+# 1788850.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 1788850.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1788850.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 1788850.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1788850.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 1788850.00ns INFO     cocotb                             **************************************************
+# 
+# 1841000.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 1841000.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1841000.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 1841000.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1841000.00ns INFO     cocotb                             the Value of period     is   26080.0
+# 
+# 1841000.00ns INFO     cocotb                             **************************************************
+# 
+# 1841000.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 1841000.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 1841000.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1841000.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 1841000.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1841000.00ns INFO     cocotb                             the Value of period     is   26080.0
+# 
+# 1841000.00ns INFO     cocotb                             **************************************************
+# 
+# 1841000.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(60)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 1841000.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 1841000.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1841000.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 1841000.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1841000.00ns INFO     cocotb                             the Value of period     is   26080.0
+# 
+# 1841000.00ns INFO     cocotb                             **************************************************
+# 
+# 1841000.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 1841000.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 1841000.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 1841000.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1841000.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 1841000.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1841000.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 1841000.00ns INFO     cocotb                             **************************************************
+# 
+# 1841010.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 1841010.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 1841010.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 1841010.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 1841010.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 1841010.00ns INFO     cocotb                             **************************************************
+# 
+# 2049400.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 2049400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2049400.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 2049400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2049400.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 2049400.00ns INFO     cocotb                             **************************************************
+# 
+# 2049400.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 2049400.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 2049400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2049400.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 2049400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2049400.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 2049400.00ns INFO     cocotb                             **************************************************
+# 
+# 2049400.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(36)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 2049400.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 2049400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2049400.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 2049400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2049400.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 2049400.00ns INFO     cocotb                             **************************************************
+# 
+# 2049400.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 2049400.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 2049400.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 2049400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2049400.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 2049400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2049400.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2049400.00ns INFO     cocotb                             **************************************************
+# 
+# 2049410.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 2049410.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2049410.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 2049410.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2049410.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2049410.00ns INFO     cocotb                             **************************************************
+# 
+# 2101560.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 2101560.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2101560.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 2101560.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2101560.00ns INFO     cocotb                             the Value of period     is   26080.0
+# 
+# 2101560.00ns INFO     cocotb                             **************************************************
+# 
+# 2101560.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 2101560.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 2101560.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2101560.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 2101560.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2101560.00ns INFO     cocotb                             the Value of period     is   26080.0
+# 
+# 2101560.00ns INFO     cocotb                             **************************************************
+# 
+# 2101560.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(60)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 2101560.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 2101560.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2101560.00ns INFO     cocotb                             the Value of baud       is   38400
+# 
+# 2101560.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2101560.00ns INFO     cocotb                             the Value of period     is   26080.0
+# 
+# 2101560.00ns INFO     cocotb                             **************************************************
+# 
+# 2101560.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 2101560.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 2101560.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 2101560.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2101560.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 2101560.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2101560.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2101560.00ns INFO     cocotb                             **************************************************
+# 
+# 2101570.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 2101570.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2101570.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 2101570.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2101570.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2101570.00ns INFO     cocotb                             **************************************************
+# 
+# 2518280.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 2518280.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2518280.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 2518280.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2518280.00ns INFO     cocotb                             the Value of period     is   208360.0
+# 
+# 2518280.00ns INFO     cocotb                             **************************************************
+# 
+# 2518280.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 2518280.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 2518280.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2518280.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 2518280.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2518280.00ns INFO     cocotb                             the Value of period     is   208360.0
+# 
+# 2518280.00ns INFO     cocotb                             **************************************************
+# 
+# 2518280.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(28)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 2518280.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 2518280.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2518280.00ns INFO     cocotb                             the Value of baud       is   4800
+# 
+# 2518280.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2518280.00ns INFO     cocotb                             the Value of period     is   208360.0
+# 
+# 2518280.00ns INFO     cocotb                             **************************************************
+# 
+# 2518280.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 2518280.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 2518280.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 2518280.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2518280.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 2518280.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2518280.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2518280.00ns INFO     cocotb                             **************************************************
+# 
+# 2518290.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 2518290.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2518290.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 2518290.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2518290.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2518290.00ns INFO     cocotb                             **************************************************
+# 
+# 2657240.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 2657240.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2657240.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 2657240.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2657240.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 2657240.00ns INFO     cocotb                             **************************************************
+# 
+# 2657240.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 2657240.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 2657240.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2657240.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 2657240.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2657240.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 2657240.00ns INFO     cocotb                             **************************************************
+# 
+# 2657240.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(44)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 2657240.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 2657240.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2657240.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 2657240.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2657240.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 2657240.00ns INFO     cocotb                             **************************************************
+# 
+# 2657240.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 2657240.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 2657240.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 2657240.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2657240.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 2657240.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2657240.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2657240.00ns INFO     cocotb                             **************************************************
+# 
+# 2657250.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 2657250.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2657250.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 2657250.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2657250.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2657250.00ns INFO     cocotb                             **************************************************
+# 
+# 2865640.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 2865640.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2865640.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 2865640.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2865640.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 2865640.00ns INFO     cocotb                             **************************************************
+# 
+# 2865640.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 2865640.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 2865640.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2865640.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 2865640.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2865640.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 2865640.00ns INFO     cocotb                             **************************************************
+# 
+# 2865640.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(36)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 2865640.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 2865640.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2865640.00ns INFO     cocotb                             the Value of baud       is   9600
+# 
+# 2865640.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2865640.00ns INFO     cocotb                             the Value of period     is   104200.0
+# 
+# 2865640.00ns INFO     cocotb                             **************************************************
+# 
+# 2865640.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 2865640.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 2865640.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 2865640.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2865640.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 2865640.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2865640.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2865640.00ns INFO     cocotb                             **************************************************
+# 
+# 2865650.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 2865650.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2865650.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 2865650.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2865650.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2865650.00ns INFO     cocotb                             **************************************************
+# 
+# 2900440.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 2900440.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2900440.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 2900440.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2900440.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 2900440.00ns INFO     cocotb                             **************************************************
+# 
+# 2900440.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 2900440.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 2900440.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2900440.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 2900440.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2900440.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 2900440.00ns INFO     cocotb                             **************************************************
+# 
+# 2900440.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(68)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 2900440.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 2900440.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2900440.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 2900440.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2900440.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 2900440.00ns INFO     cocotb                             **************************************************
+# 
+# 2900440.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 2900440.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 2900440.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 2900440.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2900440.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 2900440.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2900440.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2900440.00ns INFO     cocotb                             **************************************************
+# 
+# 2900450.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 2900450.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 2900450.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 2900450.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 2900450.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 2900450.00ns INFO     cocotb                             **************************************************
+# 
+# 3039400.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 3039400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3039400.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 3039400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3039400.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 3039400.00ns INFO     cocotb                             **************************************************
+# 
+# 3039400.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 3039400.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 3039400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3039400.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 3039400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3039400.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 3039400.00ns INFO     cocotb                             **************************************************
+# 
+# 3039400.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(44)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 3039400.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 3039400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3039400.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 3039400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3039400.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 3039400.00ns INFO     cocotb                             **************************************************
+# 
+# 3039400.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 3039400.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 3039400.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 3039400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3039400.00ns INFO     cocotb                             the Value of baud       is   19200
+# 
+# 3039400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3039400.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 3039400.00ns INFO     cocotb                             **************************************************
+# 
+# 3039410.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 3039410.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3039410.00ns INFO     cocotb                             the Value of baud       is   19200
+# 
+# 3039410.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3039410.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 3039410.00ns INFO     cocotb                             **************************************************
+# 
+# 3143640.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 3143640.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3143640.00ns INFO     cocotb                             the Value of baud       is   19200
+# 
+# 3143640.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3143640.00ns INFO     cocotb                             the Value of period     is   52120.0
+# 
+# 3143640.00ns INFO     cocotb                             **************************************************
+# 
+# 3143640.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 3143640.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 3143640.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3143640.00ns INFO     cocotb                             the Value of baud       is   19200
+# 
+# 3143640.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3143640.00ns INFO     cocotb                             the Value of period     is   52120.0
+# 
+# 3143640.00ns INFO     cocotb                             **************************************************
+# 
+# 3143640.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(52)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 3143640.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 3143640.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3143640.00ns INFO     cocotb                             the Value of baud       is   19200
+# 
+# 3143640.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3143640.00ns INFO     cocotb                             the Value of period     is   52120.0
+# 
+# 3143640.00ns INFO     cocotb                             **************************************************
+# 
+# 3143640.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 3143640.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 3143640.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 3143640.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3143640.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 3143640.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3143640.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 3143640.00ns INFO     cocotb                             **************************************************
+# 
+# 3143650.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 3143650.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3143650.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 3143650.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3143650.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 3143650.00ns INFO     cocotb                             **************************************************
+# 
+# 3282600.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 3282600.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3282600.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 3282600.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3282600.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 3282600.00ns INFO     cocotb                             **************************************************
+# 
+# 3282600.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 3282600.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 3282600.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3282600.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 3282600.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3282600.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 3282600.00ns INFO     cocotb                             **************************************************
+# 
+# 3282600.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(44)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 3282600.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 3282600.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3282600.00ns INFO     cocotb                             the Value of baud       is   14400
+# 
+# 3282600.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3282600.00ns INFO     cocotb                             the Value of period     is   69480.0
+# 
+# 3282600.00ns INFO     cocotb                             **************************************************
+# 
+# 3282600.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 3282600.00ns INFO     cocotb                              [SEQUENCE] WE ARE STARTING  body SEQUENCE
+# 
+# 3282600.00ns INFO     cocotb                             ******************SEQUENCE*******************
+# 
+# 3282600.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3282600.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 3282600.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3282600.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 3282600.00ns INFO     cocotb                             **************************************************
+# 
+# 3282610.00ns INFO     cocotb                             ******************DRIVER*******************
+# 
+# 3282610.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3282610.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 3282610.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3282610.00ns INFO     cocotb                             the Value of period     is   0
+# 
+# 3282610.00ns INFO     cocotb                             **************************************************
+# 
+# 3317400.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 3317400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3317400.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 3317400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3317400.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 3317400.00ns INFO     cocotb                             **************************************************
+# 
+# 3317400.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 3317400.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 3317400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3317400.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 3317400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3317400.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 3317400.00ns INFO     cocotb                             **************************************************
+# 
+# 3317400.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(68)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 3317400.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 3317400.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3317400.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 3317400.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3317400.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 3317400.00ns INFO     cocotb                             **************************************************
+# 
+# 3317400.00ns INFO     ..nstance.driver_instance200534384 driver.py(25)[uvm_test_top.environment_instance.agent_instance.driver_instance]:  [DRIVER] WE ARE STARTING  run_phase DRIVER
+# 
+# 3352200.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 3352200.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3352200.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 3352200.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3352200.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 3352200.00ns INFO     cocotb                             **************************************************
+# 
+# 3352200.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 3352200.00ns INFO     cocotb                             ******************SCOREBOARD*******************
+# 
+# 3352200.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3352200.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 3352200.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3352200.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 3352200.00ns INFO     cocotb                             **************************************************
+# 
+# 3352200.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(68)[uvm_test_top.environment_instance.scoreboard_instance]: First baud Test Case Passed 
+# 
+# 3352200.00ns INFO     cocotb                             ******************SUBSCRIBER*******************
+# 
+# 3352200.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3352200.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 3352200.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3352200.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 3352200.00ns INFO     cocotb                             **************************************************
+# 
+# 3387000.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(77)[uvm_test_top.environment_instance.scoreboard_instance]: The Number Of Total  Test Cases is :  21
+# 
+# 3387000.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(78)[uvm_test_top.environment_instance.scoreboard_instance]: The Number Of Passed Test Cases is :  21
+# 
+# 3387000.00ns INFO     ..nce.scoreboard_instance200411216 scoreboard.py(79)[uvm_test_top.environment_instance.scoreboard_instance]: The Number Of Failed Test Cases is :  0
+# 
+# 3387000.00ns INFO     cocotb                             ******************MONITOR*******************
+# 
+# 3387000.00ns INFO     cocotb                             the Value of rst        is   0
+# 
+# 3387000.00ns INFO     cocotb                             the Value of baud       is   57600
+# 
+# 3387000.00ns INFO     cocotb                             the Value of tx_clk     is   0
+# 
+# 3387000.00ns INFO     cocotb                             the Value of period     is   17400.0
+# 
+# 3387000.00ns INFO     cocotb                             **************************************************
+# 
+# 3387000.00ns INFO     ..stance.monitor_instance200535632 monitor.py(24)[uvm_test_top.environment_instance.agent_instance.monitor_instance]: [Monitor] waiting for item ...
+# 
+# 3387000.00ns INFO     cocotb.regression                  test passed
+# 
+# 3387000.00ns INFO     cocotb.regression                  **************************************************************************************
+# 
+#                                                          ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+# 
+#                                                          **************************************************************************************
+# 
+#                                                          ** tb.test                        PASS     3387000.00          17.16     197410.06  **
+# 
+#                                                          **************************************************************************************
+# 
+#                                                          ** TESTS=1 PASS=1 FAIL=0 SKIP=0            3387000.00          17.94     188826.57  **
+# 
+#                                                          **************************************************************************************
+# 
+#                                                          
+# 
+# ** Note: $finish
+#    Time: 3387000001 ps  Iteration: 0  Instance: /clk_gen
+# End time: 17:19:17 on Jan 30,2024, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 1
